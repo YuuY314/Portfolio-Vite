@@ -7,7 +7,7 @@ function Projects() {
 
     useEffect(() => {
         const searchRepositories = async () => {
-            const response = await fetch("https://api.github.com/users/yuuy314/repos");
+            const response = await fetch("https://api.github.com/users/yuuy314/repos?page=1&per_page=50");
             const data = await response.json();
             setRepositories(data);
         }
