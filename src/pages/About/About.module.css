@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-block: 40px;
 }
 
 .bio {
@@ -49,4 +50,26 @@
 
 .icons img {
     height: 50px;
+}
+
+@media (max-width: 769px) {
+    .bio {
+        flex-direction: column;
+        padding-inline: 20px;
+        gap: 1rem;
+    }
+
+    .bio img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        gap: .5rem;
+    }
+
+    .icons img {
+        height: 40px;
+    }
 }

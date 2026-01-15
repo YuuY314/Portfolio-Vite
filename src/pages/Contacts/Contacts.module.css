@@ -20,3 +20,15 @@
     font-size: 3rem;
     color: var(--red);
 }
+
+@media (max-width: 769px) {
+    .contacts {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        gap: .5rem;
+    }
+}
